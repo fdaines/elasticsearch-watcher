@@ -1,0 +1,20 @@
+{
+  "refresh_time": 1,
+
+  "nodes" : {
+    "heap_limit": 75,
+    "ram_limit": 75,
+    "cpu_limit": 10,
+    "loads_limit": 1.00,
+    "exclude_nodes":[],
+    "include_nodes":["*"]
+  },
+  "thread_pool" : {
+    "active_limit": 10,
+    "queue_limit": 10,
+    "rejected_limit": 10000,
+    "exclude_nodes":[],
+    "include_nodes":["*"],
+    "include_threads":["search","management"]
+  }
+}
