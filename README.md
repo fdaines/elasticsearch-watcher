@@ -33,8 +33,13 @@ docker build --no-cache --rm -t elasticsearch-watcher .
 ```
 
 2. Launch a Docker container (mapping env values)
+If you run the container in this way, then elasticsearch-watcher will ask for the host and apikey
 ```
-# You can pass environment values when starting the docker container
+docker run -it elasticsearch-watcher
+```
+
+You can pass environment values when starting the docker container, but I think this way is not secure
+```
 docker run -e ELASTIC_SEARCH_HOSTS="" -e ELASTIC_SEARCH_APIKEY="" -it elasticsearch-watcher
 ```
 
